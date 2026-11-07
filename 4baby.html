@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#09090c"><title>A Little Surprise For You</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:25px 15px;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 15%,#28252b,#101014 48%,#07070a);color:#f5f0e8;font-family:Georgia,serif}main{width:min(100%,620px);text-align:center}.kicker{font:11px Arial;letter-spacing:4px;color:#d4b477}h1{font-size:clamp(27px,6vw,42px);font-weight:400;margin:14px 0 8px}.sub,.hint{font:12px Arial;color:#b9aa91;letter-spacing:1px}.scene{height:285px;display:grid;place-items:center;perspective:1000px}.env{position:relative;width:min(360px,86vw);height:220px;cursor:pointer;filter:drop-shadow(0 22px 28px #000b)}.back{position:absolute;inset:0;background:linear-gradient(135deg,#302c2d,#151519);border:1px solid #987b4d;border-radius:4px}.paper{position:absolute;left:7%;width:86%;height:90%;top:4%;z-index:2;background:#eee6d8;color:#28232a;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:top .9s,transform .9s}.paper small{font:10px Arial;letter-spacing:3px;color:#8e744c}.paper b{font-size:24px;font-weight:400;margin-top:12px}.flap{position:absolute;inset:0;z-index:4;background:linear-gradient(145deg,#554832,#30281e);clip-path:polygon(0 0,100% 0,50% 59%);transform-origin:top;transition:transform .7s}.pocket{position:absolute;inset:0;z-index:3;background:linear-gradient(35deg,#211e1b 0 49.5%,transparent 50%),linear-gradient(-35deg,#383026 0 49.5%,transparent 50%);clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%)}.seal{position:absolute;z-index:5;left:50%;top:53%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#f0d59a,#a17b43);color:#21190e;font-size:22px;transition:opacity .2s}.env.open .flap{transform:rotateX(180deg);z-index:1}.env.open .paper{top:-40%;transform:translateY(-8px);z-index:5}.env.open .seal{opacity:0}.letter{display:none;text-align:left;direction:ltr;margin:15px auto 0;padding:clamp(22px,5vw,38px);border:1px solid #64543a;border-radius:12px;background:linear-gradient(145deg,#19191e,#101014);box-shadow:0 18px 55px #0008;animation:rise .8s}.letter.show{display:block}.letter h2{font-size:24px;font-weight:400;color:#9ed8ec;margin:0 0 20px}.message{font:15px/2 Arial,sans-serif;color:#f1edf0;white-space:pre-wrap}.sign{font:italic 17px Georgia;color:#d4b477;text-align:right;margin-top:24px;line-height:1.9}.foot{font:10px Arial;color:#777;margin-top:20px}@keyframes rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body><main>
+<div class="kicker">A LITTLE SOMETHING, JUST FOR YOU</div><h1>A Little Surprise For You</h1><p class="sub">Made with love • Just open it</p>
+<div class="scene"><div class="env" id="env" role="button" tabindex="0" aria-label="Open the letter"><div class="back"></div><div class="paper"><small>SEALED WITH LOVE</small><b>For You ♡</b></div><div class="flap"></div><div class="pocket"></div><div class="seal">♡</div></div></div>
+<div class="hint" id="hint">TAP THE ENVELOPE TO OPEN</div>
+<section class="letter" id="letter"><h2>Hey My Little Babyy 🥹🩵</h2>
+<div class="message">Mealblich b wsh nbda but i just wanted to make something special for you😗
+
+Ur so special for me and precious 🩷 you make my ordinary days feel special ❤️ even the smallest things remind me of you 🥹 kolch baby yfkrni fik ana i feel happy and loved ki ntfkr🥹
+
+You are my fav notification my sweetest thought and one of the most beautiful parts of my day💋
+
+I LOVE YOU MORE than you think these little words could never explain my love for you darling 💋💋</div>
+<div class="sign">XoXo 💘<br>Yours, always 💌<br>Nhbekk Adulti muaaah 💋</div></section>
+<div class="foot">A little note, made especially for you.</div></main>
+<script>
+const env=document.getElementById('env'),letter=document.getElementById('letter');function openLetter(){
+ if(env.classList.contains('open'))return;
+ env.classList.add('open');
+ document.getElementById('localSong').play();
+ document.getElementById('hint').textContent='A LITTLE MESSAGE FOR YOU ♡';
+ setTimeout(()=>letter.classList.add('show'),600);
+}
+env.addEventListener('click',openLetter);env.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLetter()}});
+</script>
+<audio id="localSong" src="Https://github.com/ghrissalsabil-code/ss/raw/refs/heads/main/cb234188-2f7d-40bb-85bd-2748ee261307.mp3" preload="auto"></audio>
+</body></html>
